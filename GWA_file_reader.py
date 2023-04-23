@@ -41,11 +41,20 @@ with open('student_name&gwa_record.txt', 'r') as record_file:
     print()
     print(f'Congratulations to {highest_student_name} for having the highest GWA of {highest_gwa}!')
     time.sleep(3)
+    print()
 
 # Ask the user if they want to see all records from the file
 while True:
     response = input("Do you wish to view every record that is contained within the file? (Y/N): ")
-    
+    if response.upper() == 'Y':
+        with open('student_name&gwa_record.txt', 'r') as record_file:
+            print()
+            print("All of the records are listed here:")
+            print()
+            for record in record_file:
+                print(record.strip())
+            break
+
 # Before exiting the application, include some pauses and random message prompts.
 print()
 print("loading...")
