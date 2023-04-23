@@ -36,16 +36,16 @@ with open('student_name&gwa_record.txt', 'r') as record_file:
 
 # output the result
     print()
-    print("Calculating results...")
+    print("\033[33mCalculating results...\033[0m")
     time.sleep(3)
     print()
-    print(f'Congratulations to {highest_student_name} for having the highest GWA of {highest_gwa}!')
+    print(f'\033[44mCongratulations to {highest_student_name} for having the highest GWA of {highest_gwa}!\033[0m')
     time.sleep(3)
     print()
 
 # Ask the user if they want to see all records from the file
 while True:
-    response = input("Do you wish to view every record that is contained within the file? (Y/N): ")
+    response = input("\033[30mDo you wish to view every record that is contained within the file? (Y/N): \033[0m")
     if response.upper() == 'Y':
         with open('student_name&gwa_record.txt', 'r') as record_file:
             print()
@@ -54,10 +54,14 @@ while True:
             for record in record_file:
                 print(record.strip())
             break
+    elif response.upper() == 'N':
+        break
+    else:
+        print("Invalid response. Please give it another shot.")
 
 # Before exiting the application, include some pauses and random message prompts.
 print()
-print("loading...")
+print("\033[33mloading...\033[0m")
 time.sleep(3)
 print()
 print(random.choice(["Thank you for using AritzMetic's GWA Reader!", "Goodbye and have a nice day!", "Stay curious and keep learning!"]))
