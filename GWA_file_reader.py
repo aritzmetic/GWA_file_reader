@@ -9,7 +9,10 @@ with open('student_name&gwa_record.txt', 'r') as record_file:
     highest_student_name = ''
     highest_gwa = 5.0
 # use for loop to iterate the file
-# split the name of the student and their gwa
-# convert the gwa into float
+    for record in record_file:
+        # split the name of the student and their gwa
+        student_name, gwa = record.split()
+        # convert the gwa into float
+        gwa = float(gwa)
 # create condition to update the file
 # output the result
