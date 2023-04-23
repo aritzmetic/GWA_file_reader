@@ -1,0 +1,3 @@
+Aritz, 1.00
+Jose, 1.01
+Maricon, 1.02
