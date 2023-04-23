@@ -33,7 +33,7 @@ with open('student_name&gwa_record.txt', 'r') as record_file:
         if gwa < highest_gwa:
             highest_student_name = student_name
             highest_gwa = gwa
-            
+
 # output the result
     print()
     print("Calculating results...")
@@ -42,6 +42,10 @@ with open('student_name&gwa_record.txt', 'r') as record_file:
     print(f'Congratulations to {highest_student_name} for having the highest GWA of {highest_gwa}!')
     time.sleep(3)
 
+# Ask the user if they want to see all records from the file
+while True:
+    response = input("Do you wish to view every record that is contained within the file? (Y/N): ")
+    
 # Before exiting the application, include some pauses and random message prompts.
 print()
 print("loading...")
