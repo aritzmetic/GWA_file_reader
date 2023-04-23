@@ -9,3 +9,9 @@ https://user-images.githubusercontent.com/112628197/233850720-385baf0f-08d8-4057
 ### **PROGRAMMING LANGUAGE USED**
 > Python
 
+## **Attributes**
+- > Determines which student in the file has the **highest GWA.**
+- > **Gives the user the option** to see every record in the file.
+- > A **custom message** to the user is included.
+- > Uses the **pyfiglet module** to show a stylish greeting and farewell.
+- > Adds a **sense of interactivity** by delaying actions and sending out random messages.
